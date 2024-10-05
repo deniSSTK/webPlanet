@@ -2,7 +2,6 @@ body{
     padding: 0;
     margin: 0;
 }
-
 #sun {
     display: flex;
     justify-content: center;
@@ -39,7 +38,6 @@ body{
     display: flex;
     justify-content: right;
 }
-
 .planet {
     margin: 0;
     padding: 0;
