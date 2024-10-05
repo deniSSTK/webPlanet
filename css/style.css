@@ -1,19 +1,26 @@
-body {
+body, html {
     padding: 0;
     margin: 0;
+    /*height: 100vh;*/
+    background-image: url('../img/spaceBackground.png');
+    background-size: cover;
+    background-position: center;
 }
 
+.planets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 #sun {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
 }
-#mercury, #earth, #jupiter, #uranus {
-    display: flex;
-    justify-content: left;
-}
+
 #venus, #mars, #saturn, #neptune {
-    display: flex;
-    justify-content: right;
+    align-self: flex-end;
 }
 
 .planet-info {
@@ -21,6 +28,18 @@ body {
     bottom: 10px;
     left: 10px;
     z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.planet-info.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.planet-info.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .planet-message {

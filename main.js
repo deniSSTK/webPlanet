@@ -20,27 +20,18 @@ try {
         if (planetMessage) {
             planetMessage.style.display = 'block';
             planetInfo.classList.remove('hidden');
+            setTimeout(() => {
+                planetInfo.classList.add('visible');
+            }, 10);
         }
     }
 
-    document.body.addEventListener('click', function (event) {
-        const planetInfo = document.getElementById('planet-info');
-        if (!event.target.closest('.planet')) {
-            planetInfo.classList.add('hidden');
-            const messages = document.querySelectorAll('.planet-message');
-            messages.forEach(message => {
-                message.style.display = 'none';
-            });
-        }
-    });
-
     window.addEventListener('scroll', function() {
         const planetInfo = document.getElementById('planet-info');
-        planetInfo.classList.add('hidden');
-        const messages = document.querySelectorAll('.planet-message');
-        messages.forEach(message => {
-            message.style.display = 'none';
-        });
+        planetInfo.classList.remove('visible');
+        setTimeout(() => {
+            planetInfo.classList.add('hidden');
+        }, 500);
     });
 
 } catch (e) {
