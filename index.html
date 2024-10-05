@@ -11,31 +11,41 @@
         <div class="planet" id="sun">
             <img src="img/planets/sun.jpg" alt="File mercury.jpg not found">
         </div>
-        <div class="planet" id="mercury">
-            <img src="img/planets/mercury.png" alt="File mercury.jpg not found">
+        <div class="planet" id="mercury" onclick="showPlanetInfo('mercury')">
+            <img src="img/planets/mercury.png" alt="Mercury">
         </div>
-        <div class="planet" id="venus">
-            <img src="img/planets/venus.png" alt="File venus.jpg not found">
+        <div class="planet" id="venus" onclick="showPlanetInfo('venus')">
+            <img src="img/planets/venus.png" alt="Venus">
         </div>
-        <div class="planet" id="earth">
-            <img src="img/planets/earth.png" alt="File earth.jpg not found">
+        <div class="planet" id="earth" onclick="showPlanetInfo('earth')">
+            <img src="img/planets/earth.png" alt="Earth">
         </div>
-        <div class="planet" id="mars">
-            <img src="img/planets/mars.png" alt="File mars.jpg not found">
+        <div class="planet" id="mars" onclick="showPlanetInfo('mars')">
+            <img src="img/planets/mars.png" alt="Mars">
         </div>
-        <div class="planet" id="jupiter">
-            <img src="img/planets/jupiter.png" alt="File jupiter.jpg not found">
+        <div class="planet" id="jupiter" onclick="showPlanetInfo('jupiter')">
+            <img src="img/planets/jupiter.png" alt="Jupiter">
         </div>
-        <div class="planet" id="saturn">
-            <img src="img/planets/saturn.png" alt="File saturn.jpg not found">
+        <div class="planet" id="saturn" onclick="showPlanetInfo('saturn')">
+            <img src="img/planets/saturn.png" alt="Saturn">
         </div>
-        <div class="planet" id="uranus">
-            <img src="img/planets/uranus.png" alt="File uranus.jpg not found">
+        <div class="planet" id="uranus" onclick="showPlanetInfo('uranus')">
+            <img src="img/planets/uranus.png" alt="Uranus">
         </div>
-        <div class="planet" id="neptune">
-            <img src="img/planets/neptune.png" alt="File neptune.jpg not found">
+        <div class="planet" id="neptune" onclick="showPlanetInfo('neptune')">
+            <img src="img/planets/neptune.png" alt="Neptune">
         </div>
     </div>
-    <script src="./js/main.js"></script>
+    <div id="planet-info" class="planet-info hidden">
+        <img id="mercury-message"  class="planet-message" src="img/messages/mercuryMessage.png" alt="Planet Info">
+        <img id="venus-message"  class="planet-message" src="img/messages/venusMessage.png" alt="Planet Info">
+        <img id="earth-message"  class="planet-message" src="img/messages/earthMessage.png" alt="Planet Info">
+        <img id="mars-message"  class="planet-message" src="img/messages/marsMessage.png" alt="Planet Info">
+        <img id="jupiter-message"  class="planet-message" src="img/messages/jupiterMessage.png" alt="Planet Info">
+        <img id="saturn-message"  class="planet-message" src="img/messages/saturnMessage.png" alt="Planet Info">
+        <img id="uranus-message"  class="planet-message" src="img/messages/uranusMessage.png" alt="Planet Info">
+        <img id="neptune-message"  class="planet-message" src="img/messages/neptuneMessage.png" alt="Planet Info">
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
