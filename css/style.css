@@ -1,3 +1,48 @@
-#mercuryImage {
-
+body{
+    padding: 0;
+    margin: 0;
 }
+
+#sun {
+    display: flex;
+    justify-content: center;
+}
+#mercury {
+    display: flex;
+    justify-content: left;
+}
+#venus {
+    display: flex;
+    justify-content: right;
+}
+#earth {
+    display: flex;
+    justify-content: left;
+}
+#mars {
+    display: flex;
+    justify-content: right;
+}
+#jupyter {
+    display: flex;
+    justify-content: left;
+}
+#saturn {
+    display: flex;
+    justify-content: right;
+}
+#uranus {
+    display: flex;
+    justify-content: left;
+}
+#neptune {
+    display: flex;
+    justify-content: right;
+}
+
+.planet {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
