@@ -9,6 +9,8 @@ body{
 #mercury {
     display: flex;
     justify-content: left;
+
+
 }
 #venus {
     display: flex;
@@ -42,5 +44,10 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 50%;  /* Круглая форма */
+    margin: 0;
+    transition: box-shadow 0.3s ease;
 }
-
+.planet:hover {
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.6);  /* Общее мягкое свечение при наведении */
+}
