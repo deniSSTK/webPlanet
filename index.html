@@ -1,5 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Journey Through the Planets</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+    
+            #container {
+                width: 100vw;
+                height: 100vh;
+                background-color: #201f30;
+            }
+    
+            .info-section {
+                padding: 20px;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+    
+            h2 {
+                margin-top: 0;
+            }
+    
+            .planet-image {
+                width: 150px;
+                height: auto;
+                float: left;
+                margin-right: 20px;
+            }
+    
+            .info-content {
+                overflow: hidden; /* Clear the float of the image */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Container for the 3D Orrery -->
+        <div id="container"></div>
+        
+    
+        <!-- Include Three.js Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="script.js"></script>
+    
+    </body>
+    </html>
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
