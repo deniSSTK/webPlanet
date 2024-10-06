@@ -2,8 +2,23 @@ body, html {
     padding: 0;
     margin: 0;
     background-size: cover;
-    background-color: #152442;
+    background-color: #071123;
     background-position: center;
+}
+
+#textMain {
+    font-family: "Kaisei Decol", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    transform: translateX(0);
+    z-index: 1000;
 }
 
 .planets {

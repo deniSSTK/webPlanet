@@ -71,7 +71,7 @@ camera.position.set(0, 12, 129);
 
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x152442, 1);
+renderer.setClearColor(0x071123, 1);
 
 document.getElementById('container').appendChild(renderer.domElement);
 renderer.setSize(window.innerWidth, window.innerHeight);

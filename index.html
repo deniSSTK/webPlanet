@@ -1,58 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Journey Through the Planets</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-    
-            #container {
-                width: 100vw;
-                height: 100vh;
-                background-color: #201f30;
-            }
-    
-            .info-section {
-                padding: 20px;
-                margin: 0;
-                background-color: #f4f4f4;
-            }
-    
-            h2 {
-                margin-top: 0;
-            }
-    
-            .planet-image {
-                width: 150px;
-                height: auto;
-                float: left;
-                margin-right: 20px;
-            }
-    
-            .info-content {
-                overflow: hidden; /* Clear the float of the image */
-            }
-        </style>
-    </head>
-    <body>
-    
-        <!-- Container for the 3D Orrery -->
-        <div id="container"></div>
-        
-    
-        <!-- Include Three.js Script -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <script src="script.js"></script>
-    
-    </body>
-    </html>
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,30 +7,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="planets">
-        <img class="planet" id="sun" src="img/planets/sun.png" alt="File mercury.jpg not found">
-        <img class="planet" id="mercury" onclick="showPlanetInfo('mercury')" src="img/planets/mercury.png" alt="Mercury">
-        <img class="planet" id="venus" onclick="showPlanetInfo('venus')" src="img/planets/venus.png" alt="Venus">
-        <img class="planet" id="earth" onclick="showPlanetInfo('earth')" src="img/planets/earth.png" alt="Earth">
-        <img class="planet" id="mars" onclick="showPlanetInfo('mars')" src="img/planets/mars.png" alt="Mars">
-        <img class="planet" id="jupiter" onclick="showPlanetInfo('jupiter')" src="img/planets/jupiter.png" alt="Jupiter">
-        <img class="planet" id="saturn" onclick="showPlanetInfo('saturn')" src="img/planets/saturn.png" alt="Saturn">
-        <img class="planet" id="uranus" onclick="showPlanetInfo('uranus')" src="img/planets/uranus.png" alt="Uranus">
-        <img class="planet" id="neptune" onclick="showPlanetInfo('neptune')" src="img/planets/neptune.png" alt="Neptune">
-    </div>
-    <div id="planet-info" class="planet-info hidden">
-        <img id="mercury-message" class="planet-message" src="img/messages/mercuryMessage.png" alt="Planet Info">
-        <img id="venus-message" class="planet-message" src="img/messages/venusMessage.png" alt="Planet Info">
-        <img id="earth-message" class="planet-message" src="img/messages/earthMessage.png" alt="Planet Info">
-        <img id="mars-message" class="planet-message" src="img/messages/marsMessage.png" alt="Planet Info">
-        <img id="jupiter-message" class="planet-message" src="img/messages/jupiterMessage.png" alt="Planet Info">
-        <img id="saturn-message" class="planet-message" src="img/messages/saturnMessage.png" alt="Planet Info">
-        <img id="uranus-message" class="planet-message" src="img/messages/uranusMessage.png" alt="Planet Info">
-        <img id="neptune-message" class="planet-message" src="img/messages/neptuneMessage.png" alt="Planet Info">
 
-        <div id="mercury-satellites" class="satellites hidden"></div>
-        <div id="venus-satellites" class="satellites hidden"></div>
-        <div id="earth-satellites" class="satellites hidden">
-    <script src="main.js"></script>
+<div id="textMain">
+    <h1>JOURNEY THROUGH THE PLANETS</h1>
+</div>
+
+<div id="container"></div>
+
+<div class="planets">
+    <img class="planet" id="sun" src="img/planets/sun.png" alt="File mercury.jpg not found">
+    <img class="planet" id="mercury" onclick="showPlanetInfo('mercury')" src="img/planets/mercury.png" alt="Mercury">
+    <img class="planet" id="venus" onclick="showPlanetInfo('venus')" src="img/planets/venus.png" alt="Venus">
+    <img class="planet" id="earth" onclick="showPlanetInfo('earth')" src="img/planets/earth.png" alt="Earth">
+    <img class="planet" id="mars" onclick="showPlanetInfo('mars')" src="img/planets/mars.png" alt="Mars">
+    <img class="planet" id="jupiter" onclick="showPlanetInfo('jupiter')" src="img/planets/jupiter.png" alt="Jupiter">
+    <img class="planet" id="saturn" onclick="showPlanetInfo('saturn')" src="img/planets/saturn.png" alt="Saturn">
+    <img class="planet" id="uranus" onclick="showPlanetInfo('uranus')" src="img/planets/uranus.png" alt="Uranus">
+    <img class="planet" id="neptune" onclick="showPlanetInfo('neptune')" src="img/planets/neptune.png" alt="Neptune">
+</div>
+
+<div id="planet-info" class="planet-info hidden">
+    <img id="mercury-message" class="planet-message" src="img/messages/mercuryMessage.png" alt="Planet Info">
+    <img id="venus-message" class="planet-message" src="img/messages/venusMessage.png" alt="Planet Info">
+    <img id="earth-message" class="planet-message" src="img/messages/earthMessage.png" alt="Planet Info">
+    <img id="mars-message" class="planet-message" src="img/messages/marsMessage.png" alt="Planet Info">
+    <img id="jupiter-message" class="planet-message" src="img/messages/jupiterMessage.png" alt="Planet Info">
+    <img id="saturn-message" class="planet-message" src="img/messages/saturnMessage.png" alt="Planet Info">
+    <img id="uranus-message" class="planet-message" src="img/messages/uranusMessage.png" alt="Planet Info">
+    <img id="neptune-message" class="planet-message" src="img/messages/neptuneMessage.png" alt="Planet Info">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+<script src="main.js"></script>
+
 </body>
 </html>
