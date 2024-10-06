@@ -126,3 +126,39 @@ body, html {
 #earth {
     text-align: center;
 }
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #071123;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: white;
+    color: #071123;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px auto; /* Центрирование кнопки */
+    z-index: 1000;
+}
+
+.about-button:hover {
+    background-color: #007bff;
+    color: white;
+}
