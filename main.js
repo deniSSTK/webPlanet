@@ -71,7 +71,7 @@ camera.position.set(0, 12, 129);
 
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x000000, 1);
+renderer.setClearColor(0x152442, 1);
 
 document.getElementById('container').appendChild(renderer.domElement);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -102,6 +102,7 @@ let sun = new THREE.Mesh(sunGeometry, sunMaterial);
 scene.add(sun);
 
 let slowdownFactor = 0.01;
+
 
 let planets = [
     { name: "Mercury", distance: 20, size: 3, texture: mercuryTexture, speed: 0.02 * slowdownFactor, infoId: 'mercury' },
