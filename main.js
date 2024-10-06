@@ -13,17 +13,22 @@ try {
     function showPlanetInfo(planetId) {
         const planetInfo = document.getElementById('planet-info');
         const messages = document.querySelectorAll('.planet-message');
-        messages.forEach(message => {
-            message.style.display = 'none';
-        });
-        const planetMessage = document.getElementById(planetImagesPath[planetId]);
-        if (planetMessage) {
-            planetMessage.style.display = 'block';
-            planetInfo.classList.remove('hidden');
-            setTimeout(() => {
-                planetInfo.classList.add('visible');
-            }, 10);
-        }
+
+        planetInfo.classList.remove('visible');
+
+        setTimeout(() => {
+            messages.forEach(message => {
+                message.style.display = 'none';
+            });
+            const planetMessage = document.getElementById(planetImagesPath[planetId]);
+            if (planetMessage) {
+                planetMessage.style.display = 'block';
+                planetInfo.classList.remove('hidden');
+                setTimeout(() => {
+                    planetInfo.classList.add('visible');
+                }, 10);
+            }
+        }, 200);
     }
 
     window.addEventListener('scroll', function() {
