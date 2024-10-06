@@ -54,34 +54,33 @@ body, html {
 }
 
 .planet {
-    box-sizing: border-box; /* Исправлено: добавлено значение для box-sizing */
+    box-sizing: border-box;
     cursor: pointer;
 }
 
 .circle-button {
-    width: 100px; /* Установите ширину */
-    height: 100px; /* Установите высоту */
-    border-radius: 50%; /* Делаем кнопку круглой */
-    background-color: #007bff; /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none; /* Убираем рамку */
-    cursor: pointer; /* Курсор в виде руки при наведении */
-    display: flex; /* Используем flexbox для центрирования содержимого */
-    align-items: center; /* Центрируем по вертикали */
-    justify-content: center; /* Центрируем по горизонтали */
-    transition: transform 0.2s; /* Плавный переход для эффекта наведения */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
 }
 
-/* Эффект при наведении */
 .circle-button:hover {
-    transform: scale(1.1); /* Увеличение при наведении */
-}
-.planet {
-        transition: transform 0.5s ease; /* Плавный переход для перемещения */
-    cursor: pointer; /* Курсор в виде руки при наведении */
+    transform: scale(1.1);
 }
 
-/* Эффект при наведении */
+.planet {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
 .planet:hover {
-    transform: translateY(-10px); /* Двигаем планету вверх при наведении */
+    transform: translateY(-10px);
 }
