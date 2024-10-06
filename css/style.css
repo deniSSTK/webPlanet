@@ -1,7 +1,6 @@
 body, html {
     padding: 0;
     margin: 0;
-    /*height: 100vh;*/
     background-image: url('../img/spaceBackground.png');
     background-size: cover;
     background-position: center;
@@ -12,7 +11,6 @@ body, html {
     flex-direction: column;
     align-items: flex-start;
 }
-
 
 #sun {
     display: block;
@@ -53,4 +51,37 @@ body, html {
 
 .hidden {
     display: none;
+}
+
+.planet {
+    box-sizing: border-box; /* Исправлено: добавлено значение для box-sizing */
+    cursor: pointer;
+}
+
+.circle-button {
+    width: 100px; /* Установите ширину */
+    height: 100px; /* Установите высоту */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    background-color: #007bff; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    display: flex; /* Используем flexbox для центрирования содержимого */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    transition: transform 0.2s; /* Плавный переход для эффекта наведения */
+}
+
+/* Эффект при наведении */
+.circle-button:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+.planet {
+        transition: transform 0.5s ease; /* Плавный переход для перемещения */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Эффект при наведении */
+.planet:hover {
+    transform: translateY(-10px); /* Двигаем планету вверх при наведении */
 }
