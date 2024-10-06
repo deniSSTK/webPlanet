@@ -1,86 +1,86 @@
-body, html {
-    padding: 0;
-    margin: 0;
-    background-image: url('../img/spaceBackground.png');
-    background-size: cover;
-    background-position: center;
-}
+    body, html {
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-color: #201f30;
+        background-position: center;
+    }
 
-.planets {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .planets {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-#sun {
-    display: block;
-    margin: 0 auto;
-}
+    #sun {
+        display: block;
+        margin: 0 auto;
+    }
 
-#venus, #mars, #saturn, #neptune {
-    align-self: flex-end;
-}
+    #venus, #mars, #saturn, #neptune {
+        align-self: flex-end;
+    }
 
-.planet-info {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
+    .planet-info {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
 
-.planet-info.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
+    .planet-info.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-.planet-info.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+    .planet-info.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 
-.planet-message {
-    max-width: 100%;
-}
+    .planet-message {
+        max-width: 100%;
+    }
 
-.planet-info img {
-    max-width: 100%;
-    height: auto;
-}
+    .planet-info img {
+        max-width: 100%;
+        height: auto;
+    }
 
-.hidden {
-    display: none;
-}
+    .hidden {
+        display: none;
+    }
 
-.planet {
-    box-sizing: border-box;
-    cursor: pointer;
-}
+    .planet {
+        box-sizing: border-box;
+        cursor: pointer;
+    }
 
-.circle-button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s;
-}
+    .circle-button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+    }
 
-.circle-button:hover {
-    transform: scale(1.1);
-}
+    .circle-button:hover {
+        transform: scale(1.1);
+    }
 
-.planet {
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
+    .planet {
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
 
-.planet:hover {
-    transform: translateY(-10px);
-}
+    .planet:hover {
+        transform: translateY(-10px);
+    }
