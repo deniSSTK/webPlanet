@@ -2,7 +2,7 @@
         padding: 0;
         margin: 0;
         background-size: cover;
-        background-color: #201f30;
+        background-color: black;
         background-position: center;
     }
 
@@ -96,4 +96,7 @@
     .satellites img {
         max-width: 100px;
         height: auto;
+    }
+    #earth {
+        text-align: center;
     }
