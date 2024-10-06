@@ -76,6 +76,12 @@ camera.position.set(0, 12, 129);  // Move the camera closer to the center
 // Create the renderer and attach it to the DOM
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
+
+// Set the renderer background color to #201f30
+renderer.setClearColor(0x201f30, 1);  // 0x201f30 is the hex value for #201f30
+
+document.getElementById('container').appendChild(renderer.domElement);
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('container').appendChild(renderer.domElement);
 
 // Add ambient lighting
