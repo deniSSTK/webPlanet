@@ -1,1 +1,0 @@
-const planets = document.querySelectorAll('.planet');
