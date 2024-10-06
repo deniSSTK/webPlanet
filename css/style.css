@@ -1,53 +1,134 @@
-body{
+body {
     padding: 0;
     margin: 0;
+    background: black;
 }
+
 #sun {
     display: flex;
     justify-content: center;
 }
+
 #mercury {
     display: flex;
     justify-content: left;
-
-
 }
+
 #venus {
     display: flex;
     justify-content: right;
 }
+
 #earth {
     display: flex;
     justify-content: left;
 }
+
 #mars {
     display: flex;
     justify-content: right;
 }
-#jupyter {
-    display: flex;
+
+#jupiter {
+display: flex;
     justify-content: left;
 }
+
 #saturn {
     display: flex;
     justify-content: right;
 }
+
 #uranus {
     display: flex;
     justify-content: left;
 }
+
 #neptune {
     display: flex;
     justify-content: right;
 }
+
+/* Общие стили для всех планет */
 .planet {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 50%;  /* Круглая форма */
-    margin: 0;
-    transition: box-shadow 0.3s ease;
+    border-radius: 50%; /* Круглая форма */
+    transition: box-shadow 0.3s ease; /* Плавный переход для свечения */
+    position: absolute; /* Позволяет вам вручную управлять положением */
 }
+
+/* Индивидуальные стили для каждой планеты */
+#sun {
+
+}
+#mercury {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    top: 30%;   /* Позиция сверху */
+    left: -50%;  /* Позиция слева */
+}
+
+#venus {
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    top: 150px;
+    right: 100px;
+}
+
+#earth {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    top: 250px;
+    left: 200px;
+}
+
+#mars {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    top: 300px;
+    right: 150px;
+}
+
+#jupiter {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    top: 400px;
+    left: 250px;
+}
+
+#saturn {
+    width: 90px;
+    height: 90px;
+    background-color: lightyellow;
+    top: 500px;
+    right: 200px;
+}
+
+#uranus {
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    top: 600px;
+    left: 300px;
+}
+
+#neptune {
+    width: 65px;
+    height: 65px;
+    background-color: darkblue;
+    top: 700px;
+    right: 250px;
+}
+
+/* Добавляем эффект свечения при наведении */
 .planet:hover {
-    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.6);  /* Общее мягкое свечение при наведении */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 }
